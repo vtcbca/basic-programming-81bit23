@@ -1,23 +1,5 @@
-#include <iostream>
-unsigned long long factorial(int n) {
-    if (n < 0) return 0;
-    if (n == 0) return 1;
-    unsigned long long result = 1;
-    for (int i = 1; i <= n; ++i) {
-        result *= i;
-    }
-    return result;
-}
-
-int main() {
-    int number;
-    std::cout << "Enter a number: ";
-    std::cin >> number;
-    unsigned long long result = factorial(number);
-    if (result != 0) {
-        std::cout << "Factorial of " << number << " is " << result << std::endl;
-    } else {
-        std::cout << "Factorial is undefined for negative numbers." << std::endl;
-    }
-    return 0;
-}
+num = int(input('Enter any number = '))
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print(f"The factorial of {num} is {factorial}")
